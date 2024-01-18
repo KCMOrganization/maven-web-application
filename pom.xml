@@ -94,14 +94,14 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>KCM Release </name>
-	      <url>http://18.207.236.141:8081/repository/KCMRelease/</url>
+	      <name>KM Release </name>
+	      <url>http://3.83.99.116:8081/repository/KMRelease/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>KCM Snapshot </name>
-	      <url>http://18.207.236.141:8081/repository/KCMSnapshot/</url>
+	      <name>KM Snapshot </name>
+	      <url>http://3.83.99.116:8081/repository/KMSnapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
