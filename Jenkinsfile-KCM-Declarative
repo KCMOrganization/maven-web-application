@@ -1,0 +1,32 @@
+pipeline{ 
+  agent any 
+  tools { 
+    maven "maven3.9.6" 
+  } 
+  //options {} 
+  //triggers {} 
+  stages{ 
+    stage('1clone'){ 
+      steps{ 
+        git https 
+      } 
+    } 
+    stage('2build'){ 
+      steps{
+        sh "mvn clean package" 
+      } 
+    } 
+/*
+    stage('3review'){ 
+      steps{ 
+        sh "sonar:sonar" 
+      } 
+    } 
+*/   
+   stage('4artifactory'){
+    steps{
+      sh "mvn deploy" 
+    } 
+   } 
+ } 
+}
